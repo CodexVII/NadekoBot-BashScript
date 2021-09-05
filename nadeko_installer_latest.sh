@@ -38,7 +38,7 @@ echo "NadekoBot downloaded."
 
 echo ""
 echo "Downloading Nadeko dependencies"
-cd "$root/$tempdir/NadekoBot"
+cd "$root/$tempdir/nadekobot"
 dotnet restore
 echo ""
 echo "Download done"
@@ -53,11 +53,11 @@ cd "$root"
 
 if [ ! -d NadekoBot ]
 then
-    mv "$tempdir"/NadekoBot NadekoBot
+    mv "$tempdir"/nadekobot NadekoBot
 else
     rm -rf NadekoBot_old 1>/dev/null 2>&1
     mv -fT NadekoBot NadekoBot_old 1>/dev/null 2>&1
-    mv "$tempdir"/NadekoBot NadekoBot
+    mv "$tempdir"/nadekobot NadekoBot
     cp -f "$root/NadekoBot_old/src/NadekoBot/credentials.json" "$root/NadekoBot/src/NadekoBot/credentials.json" 1>/dev/null 2>&1
     echo ""
     echo "credentials.json copied to the new version"
