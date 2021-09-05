@@ -38,7 +38,7 @@ echo "NadekoBot downloaded."
 
 echo ""
 echo "Downloading Nadeko dependencies"
-cd "$root/$tempdir/nadekobot"
+cd "$root/$tempdir/NadekoBot"
 dotnet restore
 echo ""
 echo "Download done"
